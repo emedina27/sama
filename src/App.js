@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import InfoCard from "./Components/InfoCard";
+import GridLayout from "./Components/GridLayout";
 
 function App() {
   return (
     <div className="App">
-      <InfoCard />
+      <GridLayout />
     </div>
   );
 }
