@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import CardData from "../Data/test.json";
 import { Card } from "react-bootstrap";
 import { Button } from "react-bootstrap";
+import { Accordion } from "react-bootstrap";
 import "./info-card.css";
 
 class InfoCard extends Component {
@@ -14,11 +15,23 @@ class InfoCard extends Component {
               <div className="infoCard">
                 <Card.Img variant="top" src={item.PhotoName} />
               </div>
-              <div className>
-                <Card.Body>
-                  <Card.Title>{item.ItemName}</Card.Title>
-                  <Button variant="outline-primary">See More</Button>
-                </Card.Body>
+              <div className="accordion">
+                <Accordion>
+                  <Card>
+                    <Card.Header>
+                      <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                        Click me!
+                      </Accordion.Toggle>
+                    </Card.Header>
+                    <Accordion.Collapse eventKey="0">
+                      <Card.Body>
+                         
+
+
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
               </div>
             </div>
           );
