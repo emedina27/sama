@@ -10,7 +10,7 @@ class GridLayout extends React.Component {
     return (
       <div>
         <Container>
-          <Row className="justify-content-md-center">
+          <Row className="">
             <div className="App-header">
               <img src={logo} className="logo" />
             </div>

@@ -2,24 +2,10 @@
   .grid-container {
     width: 100%;
     padding: 10%;
-    margin: 0px 0px 0px 0px;
     display: grid;
-    justify-content: space-between;
     grid-template-columns: 90%;
   }
-
-  .accordion {
-    background-color: rgb(176, 176, 236)90, 90, 207);
-    
-  }
-
-  .accordion:hover {
-    background-color: brown;
-  }
-
 }
-
-
 
 @media screen and (min-width: 767px) {
   .grid-container {
@@ -33,11 +19,11 @@
 
 @media screen and (min-width: 1200px) {
   .grid-container {
-    width: 100%;
-    padding: 10%;
-    border: 1px black;
-    grid-template-columns: 20% 20% 20%;
-    grid-template-rows: 25% 20% 20%;
-    grid-row-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+  
+    grid-gap: 5rem;
   }
+
+  .grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
 }

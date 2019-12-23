@@ -13,25 +13,30 @@ class InfoCard extends Component {
           return (
             <div>
               <div className="infoCard">
-                <Card.Img variant="top" src={item.PhotoName} />
-              </div>
-              <div className="accordion">
-                <Accordion>
-                  <Card>
-                    <Card.Header>
-                      <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                        Click me!
-                      </Accordion.Toggle>
-                    </Card.Header>
-                    <Accordion.Collapse eventKey="0">
-                      <Card.Body>
-                         
+                <Card.Img variant="top" src={item.PhotoName} className="grow" />
 
-
-                      </Card.Body>
-                    </Accordion.Collapse>
-                  </Card>
-                </Accordion>
+                <div className="accordion">
+                  <Accordion>
+                    <Card>
+                      <Card.Header>
+                        <Accordion.Toggle
+                          as={Button}
+                          variant="link"
+                          eventKey="0"
+                        >
+                          See More
+                        </Accordion.Toggle>
+                      </Card.Header>
+                      <Accordion.Collapse eventKey="0">
+                        <Card.Body>
+                          <Card.Title>{item.ItemName}</Card.Title>
+                          <Card.Subtitle>{item.ItemID}</Card.Subtitle>
+                          <Card.Text>{item.Description}</Card.Text>
+                        </Card.Body>
+                      </Accordion.Collapse>
+                    </Card>
+                  </Accordion>
+                </div>
               </div>
             </div>
           );
