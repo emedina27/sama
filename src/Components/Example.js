@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import { Fade } from "react-bootstrap";
 import { useState } from "react";
 
-function Example() {
+function Toggle() {
   const [open, setOpen] = useState(false);
 
   return (
@@ -26,6 +26,4 @@ function Example() {
   );
 }
 
-render(<Example />);
-
-export default Example;
+render(<Toggle/>);

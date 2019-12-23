@@ -12,10 +12,10 @@
 @media screen and (min-width: 767px) {
   .grid-container {
     width: 100%;
-    padding: 10%;
+    padding: 15%;
 
-    grid-template-columns: 25vw 25vw;
-    grid-template-rows: 25vw 25vw;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 20% 20%;
   }
 }
 
@@ -23,10 +23,9 @@
   .grid-container {
     width: 100%;
     padding: 10%;
-
-    align-content: space-around;
-    justify-content: space-between;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 30% 30% 30% 30%;
+    border: 1px black;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 25% 20% 20%;
+    grid-row-gap: 15px;
   }
 }
