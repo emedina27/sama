@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Card } from "react-bootstrap";
 import { Button } from "react-bootstrap";
-// import "../Components/grid-layout.css";
+import "../Components/grid-layout.css";
 
 class Footer extends Component {
   render() {
@@ -22,6 +22,17 @@ class Footer extends Component {
             </Card>
           </div>
         </div>
+
+        <footer class="app-footer">
+          <div>
+            <a href="https://SAMA.io">SAMA</a>
+            <span>&copy; 2019 sama-creativeLabs.</span>
+          </div>
+          <div class="ml-auto">
+            <span>Powered by</span>
+            <a href="https://SAMA.io">SAMA</a>
+          </div>
+        </footer>
       </div>
     );
   }

@@ -19,9 +19,10 @@
 
 @media screen and (min-width: 1200px) {
   .grid-container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-
+    grid-template-columns: 10fr 10fr 10fr;
+    align-content: space-between;
+    justify-content: space-around;
+    padding: 10px;
     grid-gap: 5rem;
   }
 
@@ -35,5 +36,4 @@
   .stack {
     z-index: 1;
   }
-  
 }
