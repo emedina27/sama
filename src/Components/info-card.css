@@ -1,0 +1,32 @@
+@media screen and (min-width: 480px) {
+  .grid-container {
+    width: 100%;
+    padding: 10%;
+    margin: 0px 0px 0px 0px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 90%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .grid-container {
+    width: 100%;
+    padding: 10%;
+
+    grid-template-columns: 25vw 25vw;
+    grid-template-rows: 25vw 25vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid-container {
+    width: 100%;
+    padding: 10%;
+
+    align-content: space-around;
+    justify-content: space-between;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 30% 30% 30% 30%;
+  }
+}
