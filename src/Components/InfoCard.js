@@ -13,7 +13,7 @@ class InfoCard extends Component {
             <div>
               <a>
                 <div className="infoCard">
-                  <Card.Img variant="top" src={item.PhotoName} onClick={} />
+                  <Card.Img variant="top" src={item.PhotoName} />
                 </div>
               </a>
             </div>
