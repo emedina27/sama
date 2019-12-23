@@ -20,10 +20,20 @@
 @media screen and (min-width: 1200px) {
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
-  
+    grid-template-rows: 1fr 1fr 1fr;
+
     grid-gap: 5rem;
   }
 
-  .grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
+  .grow {
+    transition: all 0.2s ease-in-out;
+  }
+  .grow:hover {
+    transform: scale(1.1);
+  }
+
+  .stack {
+    z-index: 1;
+  }
+  
 }

@@ -13,7 +13,11 @@ class InfoCard extends Component {
           return (
             <div>
               <div className="infoCard">
-                <Card.Img variant="top" src={item.PhotoName} className="grow" />
+                <Card.Img
+                  variant="top"
+                  src={item.PhotoName}
+                  className="stack grow"
+                />
 
                 <div className="accordion">
                   <Accordion>
@@ -32,6 +36,10 @@ class InfoCard extends Component {
                           <Card.Title>{item.ItemName}</Card.Title>
                           <Card.Subtitle>{item.ItemID}</Card.Subtitle>
                           <Card.Text>{item.Description}</Card.Text>
+                          <Card.Text className="font-weight-lighter">
+                            {item.Dimensions}
+                          </Card.Text>
+                          <Card.Subtitle>{item.BasePrice}.00</Card.Subtitle>
                         </Card.Body>
                       </Accordion.Collapse>
                     </Card>
