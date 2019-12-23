@@ -17,7 +17,7 @@ class Footer extends Component {
                 <Card.Text>1140 Holland Dr #2 Boca Raton FL, 33487</Card.Text>
                 <Card.Subtitle>561-628-4886</Card.Subtitle>
 
-                <Button variant="primary">Home</Button>
+                <Button variant="outline-primary">Home</Button>
               </Card.Body>
             </Card>
           </div>

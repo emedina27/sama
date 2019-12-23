@@ -17,7 +17,7 @@ class InfoCard extends Component {
               <div className>
                 <Card.Body>
                   <Card.Title>{item.ItemName}</Card.Title>
-                  <Button variant="primary">See More</Button>
+                  <Button variant="outline-primary">See More</Button>
                 </Card.Body>
               </div>
             </div>
